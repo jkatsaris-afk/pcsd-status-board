@@ -45,7 +45,7 @@ const statuses = {
   },
 };
 
-function nextStatus(current) {
+function nextStatus(current: string) {
   if (current === "green") return "yellow";
   if (current === "yellow") return "red";
   if (current === "red") return "off";
