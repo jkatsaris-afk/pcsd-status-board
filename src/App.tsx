@@ -109,8 +109,8 @@ export default function App() {
       minute: "2-digit",
     });
 
-    setEmployees((prev) =>
-      prev.map((employee) =>
+    setEmployees((prev: any) =>
+      prev.map((employee: any) =>
         employee.name === name
           ? { ...employee, status: nextStatus(employee.status), time }
           : employee
