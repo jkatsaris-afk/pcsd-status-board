@@ -88,7 +88,7 @@ export default function App() {
   }, [employees]);
 
   const filtered = useMemo(() => {
-    return employees.filter((employee) =>
+    return employees.filter((employee: any) =>
       employee.name.toLowerCase().includes(search.toLowerCase())
     );
   }, [employees, search]);
